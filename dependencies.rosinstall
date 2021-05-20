@@ -1,0 +1,4 @@
+- git:
+    local-name: abb_irb4600_40_255
+    uri: https://github.com/gramaziokohler/abb_irb4600_40_255
+    version: master

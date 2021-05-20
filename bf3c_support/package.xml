@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bf3c_support</name>
+  <version>0.0.0</version>
+  <description>The bf3c_support package</description>
+
+  <maintainer email="anton@tetov.xyz">Anton Tetov Johansson</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>ros_industrial_cmake_boilerplate</build_depend>
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  <depend>abb_irb4600_40_255</depend>
+
+  <export>
+  </export>
+</package>
