@@ -7,8 +7,10 @@ project(${pkg_extracted_name} VERSION ${pkg_extracted_version})
 
 find_package(catkin REQUIRED)
 
-catkin_page()
+catkin_package()
+
+# catkin_page()
 install(
-  DIRECTORY launch meshes urdf CAD
+  DIRECTORY launch meshes urdf rviz
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )

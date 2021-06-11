@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:macro name="mu100" params="prefix">
+
+
+        <link name="${prefix}base_link">
+            <visual>
+                    <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://bf3dp_support/meshes/mu100/visual.stl" />
+                </geometry>
+            </visual>
+            <collision>
+                    <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://bf3dp_support/meshes/mu100/collision.stl" />
+                </geometry>
+            </collision>
+        </link>
+
+        <link name="${prefix}shaft">
+            <visual name="shaft_base">
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <cylinder radius="0.02" length="0.01" />
+                </geometry>
+            </visual>
+
+            <visual name="shaft_end">
+                <origin xyz="0 0 0.01" rpy="0 0 0" />
+                <geometry>
+                    <cylinder radius="0.01" length="0.03" />
+                </geometry>
+            </visual>
+
+        </link>
+
+        <link name="${prefix}tool0" />
+
+        <joint name="${prefix}joint_1" type="continuous">
+            <parent link="${prefix}base_link" />
+            <child link="${prefix}shaft" />
+            <origin rpy="0 0 0" xyz="0 0 0" />
+        </joint>
+
+        <joint name="${prefix}joint1_tool0" type="fixed">
+            <origin xyz="0 0 0.01" rpy="0 0 0" />
+            <parent link="${prefix}shaft" />
+            <child link="${prefix}tool0" />
+        </joint>
+
+
+    </xacro:macro>
+</robot>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<robot name="bf3dp" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:include filename="$(find bf3dp_support)/urdf/workcell_macro.xacro" />
+    <xacro:bf3dp_workcell prefix="" />
+</robot>

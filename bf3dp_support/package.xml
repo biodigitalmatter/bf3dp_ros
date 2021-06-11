@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>bf3c_support</name>
+  <name>bf3dp_support</name>
   <version>0.0.0</version>
   <description>The bf3c_support package</description>
 
@@ -13,6 +13,7 @@
   <depend>urdf</depend>
   <depend>xacro</depend>
   <depend>abb_irb4600_40_255</depend>
+  <depend>abb_resources</depend>
 
   <export>
   </export>
